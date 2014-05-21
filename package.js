@@ -8,7 +8,7 @@ Package.on_use(function (api) {
   api.use('autoform', 'client');
 
   api.add_files([
-    'autoform-semantic-ui.js',
-    'templates/autoform-semantic-ui.html'
+    'templates/autoform-semantic-ui.html',
+    'templates/autoform-semantic-ui.js'
     ], 'client');
 });
