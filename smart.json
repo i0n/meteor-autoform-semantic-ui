@@ -1,0 +1,11 @@
+{
+  "name": "autoform-semantic-ui",
+  "description": "Semantic UI components for autoform",
+  "homepage": "",
+  "author": "Your Name <i0n@twitter.com> (http://twitter.com/i0n)",
+  "version": "0.0.1",
+  "git": "",
+  "packages": {
+    "autoform": {} 
+  }
+}
