@@ -4,7 +4,7 @@
   "homepage": "",
   "author": "Your Name <i0n@twitter.com> (http://twitter.com/i0n)",
   "version": "0.0.1",
-  "git": "",
+  "git": "https://github.com/i0n/meteor-autoform-semantic-ui.git",
   "packages": {
     "autoform": {} 
   }
