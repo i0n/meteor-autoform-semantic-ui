@@ -1,37 +1,35 @@
 /*
- * Template helpers for "semantic_ui" template
+ * Template helpers for "semanticUi" template
  */
 
-Template['afFieldLabel_semantic_ui'].atts = function bsFieldLabelAtts() {
-  var atts = (this || {}).atts;
+Template['afFieldLabel_semanticUi'].atts = function uiFieldLabelAtts() {
+  var atts = (_.clone(this || {})).atts;
   var labelAtts = _.omit(atts, 'name', 'autoform', 'template');
-  // Add bootstrap class if necessary
   if (typeof labelAtts['class'] === "string") {
-    labelAtts['class'] += " control-label"; //might be added twice but that shouldn't hurt anything
+    labelAtts['class'] += " ui label"; //might be added twice but that shouldn't hurt anything
   } else {
-    labelAtts['class'] = "control-label";
+    labelAtts['class'] = "ui label";
   }
   // Add "for" attribute if missing
   labelAtts['for'] = labelAtts['for'] || atts['name'];
   return labelAtts;
 };
 
-Template['afDeleteButton_semantic_ui'].atts = function bsDeleteButtonAtts() {
+Template['afDeleteButton_semanticUi'].atts = function uiDeleteButtonAtts() {
   var atts = this || {};
   var buttonAtts = _.omit(atts, '_af', 'collection', 'doc', 'contentBlock', 'type');
-  // Add bootstrap class if necessary
   if (typeof buttonAtts['class'] === "string") {
-    buttonAtts['class'] += " btn btn-danger"; //might be added twice but that shouldn't hurt anything
+    buttonAtts['class'] += " ui red button"; //might be added twice but that shouldn't hurt anything
   } else {
-    buttonAtts['class'] = "btn btn-danger";
+    buttonAtts['class'] = "ui red button";
   }
   return buttonAtts;
 };
 
-Template['quickForm_semantic_ui'].submitButtonAtts = function bsQuickFormSubmitButtonAtts() {
+Template['quickForm_semanticUi'].submitButtonAtts = function uiQuickFormSubmitButtonAtts() {
   var context = this;
   var atts = {type: "submit"};
-  atts['class'] = 'btn btn-primary';
+  atts['class'] = 'ui submit blue button';
   if (typeof context.buttonClasses === "string") {
     atts['class'] += ' ' + context.buttonClasses;
   }
