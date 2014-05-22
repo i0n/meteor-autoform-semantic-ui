@@ -3,7 +3,7 @@
   "description": "Semantic UI components for autoform",
   "homepage": "https://github.com/i0n/meteor-autoform-semantic-ui",
   "author": "https://github.com/i0n",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "git": "https://github.com/i0n/meteor-autoform-semantic-ui.git",
   "packages": {
     "autoform": {}
